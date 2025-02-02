@@ -36,21 +36,21 @@ This is a Django-based FAQ management system that supports multi-language transl
    cd faq-management
 2.Create a virtual environment:
 
-
+    ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install dependencies:
-
+source venv/bin/activate  
+3. Install dependencies:
+```bash
 pip install -r requirements.txt  
-Run migrations:
-
+4.Run migrations:
+  ```bash
 
 python manage.py migrate
-Start the development server:
-
+5.Start the development server:
+  ```bash
 python manage.py runserver 
 
-3.API Usage
+6. API Usage
 Endpoints
 List FAQs: GET /api/faqs/
 
@@ -64,28 +64,28 @@ Update FAQ: PUT /api/faqs/{id}/
 
 Delete FAQ: DELETE /api/faqs/{id}/
 
-4.Running Tests
-Prerequisites
-Install pytest and pytest-django:
+7 .Running Tests
+  Prerequisites
+  Install pytest and pytest-django:
 
-
+  ```bash
 pip install pytest pytest-django pytest-cov
-Run Tests
+8.Run Tests
+ ```bash
+   pytest
 
-pytest
+9.Code Quality
+ Linting
+ Use flake8 to ensure your code follows PEP8 guidelines:
+  ```bash
 
-5.Code Quality
-Linting
-Use flake8 to ensure your code follows PEP8 guidelines:
+ flake8 faq
 
+### Contribution Guidelines
+   How to Contribute
+  Fork the repository.
 
-flake8 faq
-
-Contribution Guidelines
-How to Contribute
-Fork the repository.
-
-#### Create a new branch:
+### Create a new branch:
 
 
 git checkout -b feature/your-feature-name
