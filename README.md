@@ -35,74 +35,53 @@ This is a Django-based FAQ management system that supports multi-language transl
    git clone https://github.com/yourusername/faq-management.git
    cd faq-management
 2.Create a virtual environment:
-  ```bash
-  python -m venv venv
-  source venv/bin/activate  
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt  
-4.Run migrations:
-  ```bash
-  python manage.py migrate
-5.Start the development server:
-  ```bash
-  python manage.py runserver 
+    python -m venv venv
+source venv/bin/activate  
+```
 
-6. API Usage
-  Endpoints
-  List FAQs: GET /api/faqs/
+## Install dependencies:
+```bash
+pip install -r requirements.txt  
+```
 
-  Create FAQ: POST /api/faqs/
+## Run migrations:
+```bash
+python manage.py migrate
+```
 
+## Start the development server:
+```bash
+python manage.py runserver 
+```
 
-  Retrieve FAQ: GET /api/faqs/{id}/
+## API Usage
+### Endpoints
+- **List FAQs:** `GET /api/faqs/`
+- **Create FAQ:** `POST /api/faqs/`
+- **Retrieve FAQ:** `GET /api/faqs/{id}/`
+- **Update FAQ:** `PUT /api/faqs/{id}/`
+- **Delete FAQ:** `DELETE /api/faqs/{id}/`
 
-  Update FAQ: PUT /api/faqs/{id}/
+## Running Tests
+### Prerequisites
+Install pytest and pytest-django:
+```bash
+pip install pytest pytest-django pytest-cov
+```
 
+### Run Tests
+```bash
+pytest
+```
 
- Delete FAQ: DELETE /api/faqs/{id}/
+## Code Quality
+### Linting
+Use flake8 to ensure your code follows PEP8 guidelines:
+```bash
+flake8 faq
+```
 
-7 .Running Tests
-  Prerequisites
-  Install pytest and pytest-django:
-
-  ```bash
-  pip install pytest pytest-django pytest-cov
-8.Run Tests
-   ```bash
-     pytest
-
-9.Code Quality
-  Linting
-  Use flake8 to ensure your code follows PEP8 guidelines:
-   ```bash
-
-  flake8 faq
-
-### Contribution Guidelines
-   How to Contribute
-  Fork the repository.
-
-### Create a new branch:
-
-
- git checkout -b feature/your-feature-name
-## Commit your changes:
-
-
-  git commit -m "feat: Add your feature"
-Push to the branch:
-
-  git push origin feature/your-feature-name
-
-
-## Commit Message Format
-  Follow the Conventional Commits format:
-
-  feat: A new feature.
-
-  fix: A bug fix.
-
-docs: Documentation changes.
-
- 
+## Contribution Guidelines
+### How to Contribute
+- Fork the repository.
+- Create a new branch.
